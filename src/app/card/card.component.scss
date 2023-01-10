@@ -1,0 +1,52 @@
+
+.card {
+  width: 100%;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  // box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+
+  .banner {
+    padding: 8px;
+
+    width: fit-content;
+    font-weight: 500;
+
+    background-color: rgb(221, 221, 221);
+    color: rgb(103, 103, 103);
+    padding-inline: 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .card-header {
+    margin-bottom: 8px;
+
+    a{
+      color: rgb(46, 46, 46);
+      text-decoration: none;
+    }
+    .company-name{
+      font-size: 18px;
+    }
+ }
+
+.card-body{
+
+  .date{
+margin-block: 8px;
+  }
+  .date-start {
+    font-size: 1em;
+    color: gray;
+
+  }
+  .date-duration {
+    font-size: 1em;
+    color: gray;
+
+  }
+}
+}
+
