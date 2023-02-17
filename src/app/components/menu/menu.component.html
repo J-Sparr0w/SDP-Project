@@ -1,0 +1,43 @@
+<div class="side-menu">
+  <div class="header">
+    <img src="../../../assets/images/menu-icon.png" alt="" />
+    <p>Krishna Prasad</p>
+  </div>
+  <ul>
+    <li>
+      <div
+        class="tabs"
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <img src="../../../assets/images/icons8-home-page-48.png" alt="" />
+        <p>Home</p>
+      </div>
+    </li>
+    <li routerLink="/offers" routerLinkActive="active">
+      <div class="tabs">
+        <img src="../../../assets/images/icons8-job-seeker-50.png" alt="" />
+        <p>Offers</p>
+      </div>
+    </li>
+    <li routerLink="/resume" routerLinkActive="active">
+      <div class="tabs">
+        <img src="../../../assets/images/icons8-cv-48.png" alt="" />
+        <p>Resume</p>
+      </div>
+    </li>
+  </ul>
+
+  <div class="footer">
+    <div class="tabs">
+      <img src="../../../assets/images/icons8-moon-symbol-60.png" alt="" />
+      <p>Light</p>
+      <img
+        src="../../../assets/images/icons8-expand-arrow-48.png"
+        alt=""
+        class="down-arrow"
+      />
+    </div>
+  </div>
+</div>

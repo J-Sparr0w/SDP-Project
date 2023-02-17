@@ -1,0 +1,102 @@
+@use '../../../assets/abstracts/index' as *;
+
+.side-menu {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+
+  width: 15vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: $secondary-bg-color;
+  box-shadow: 1px 1px 10px #00000058;
+
+  overflow-x: hidden;
+  z-index: 2;
+
+  .header{
+    padding-inline: 10px;
+    padding-block: 5px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+// justify-content: space-around;
+    gap: 15px;
+
+    img{
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+    .tabs {
+
+      padding-inline: 10px;
+      padding-block: 8px;
+
+      display: flex;
+      align-items:center;
+
+      gap: 15px;
+      // font-size: 1.2em;
+      // font-weight: bold;
+      cursor: pointer;
+
+      img{
+      width: 30px;
+      height: 30px;
+      }
+
+      &:hover {
+        border-radius: 20px;
+        background-color: #078bd710;
+      }
+
+      &.active {
+        background-color: $primary-accent-color;
+        border-radius: 20px;
+        // color: rgb(40, 40, 40);
+      }
+
+  }
+
+  .footer{
+    position: relative;
+
+    font-size: 0.9rem;
+
+    background-color: #2B3245;
+
+    border-radius: 10px;
+    margin-inline: 10px;
+    margin-block-end: 10px;
+    // margin-block: 5px;
+
+    img{
+      scale: 0.8;
+    }
+
+    .down-arrow{
+      position: absolute;
+      right: 5px;
+    }
+
+    &:hover {
+      border-radius: 20px;
+      background-color: #078bd710;
+    }
+
+  }
+}
